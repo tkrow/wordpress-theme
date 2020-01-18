@@ -826,6 +826,7 @@ a:hover, a:active {
 .widget {
 	margin: 0 0 1.5em;
 	float: right;
+	width: 100px;
 	/* Make sure select elements fit in widgets. */
 }
 
