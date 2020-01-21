@@ -826,7 +826,7 @@ a:hover, a:active {
 .widget-area{
 	float: right;
 	margin-right: 50px;
-	width: 150px;
+	width: 25%;
 	background-color: red;
 }
 
