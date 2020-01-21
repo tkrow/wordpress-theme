@@ -827,6 +827,7 @@ a:hover, a:active {
 	float: right;
 	margin-right: 50px;
 	text-align: center;
+	width: 250px;
 	margin: 0 auto;
 	background-color: red;
 }
