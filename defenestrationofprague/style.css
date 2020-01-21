@@ -823,9 +823,12 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-area{
+	float: right;
+}
+
 .widget {
 	margin: 0 0 1.5em;
-	float: right;
 	width: 100px;
 	/* Make sure select elements fit in widgets. */
 }
