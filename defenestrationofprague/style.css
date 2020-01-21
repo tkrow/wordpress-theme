@@ -827,6 +827,7 @@ a:hover, a:active {
 	float: right;
 	margin-right: 50px;
 	width: 150px;
+	background-color: red;
 }
 
 .widget {
