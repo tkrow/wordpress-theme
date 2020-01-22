@@ -19,6 +19,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
+					<?php echo "<img src='defenestrationofprague\assets\images\404.jpg'/>"?>
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'defenestrationofprague' ); ?></p>
 
 					<?php
