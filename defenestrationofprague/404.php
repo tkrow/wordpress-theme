@@ -19,7 +19,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<?php echo "<img src='wordpress theme\defenestrationofprague\assets\images\pageNotFound.jpg' width='351' height='600'/>"?>
+					<?php echo "<img src='wordpress-theme\defenestrationofprague\assets\images\pageNotFound.jpg' width='351' height='600'/>"?>
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'defenestrationofprague' ); ?></p>
 
 					<?php
