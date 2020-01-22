@@ -826,14 +826,14 @@ a:hover, a:active {
 .widget-area{
 	float: right;
 	margin-right: 200px;
-	width: 250px;
+	width: 300px;
 	border: 5px solid black;
 }
 
 .widget {
 	margin: 0 0 1.5em;
-	width: 150px;
-	/* Make sure select elements fit in widgets. */
+	width: 300px;element
+	/* Make sure select s fit in widgets. */
 }
 
 .widget select {
