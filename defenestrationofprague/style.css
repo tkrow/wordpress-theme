@@ -849,6 +849,10 @@ a:hover, a:active {
 	width: 600px;
 	border: 5px solid black;
 }
+
+.site-header{
+	text-align: center;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
