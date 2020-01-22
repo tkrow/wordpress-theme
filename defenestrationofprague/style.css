@@ -825,7 +825,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .widget-area{
 	float: right;
-	margin-right: 50px;
+	margin-right: 200px;
 	width: 400px;
 	background-color: lightblue;
 }
@@ -845,8 +845,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .content-area{
 	float: left;
-	margin-left: 50px;
-	width: 400px;
+	margin-left: 200px;
+	width: 600px;
 	background-color: lightgreen;
 }
 /*--------------------------------------------------------------
