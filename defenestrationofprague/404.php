@@ -15,7 +15,7 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<img src="/assets/images/404.jpg">
+					<img src="defenestrationofprague\assets\images\404.jpg">
 				</header><!-- .page-header -->
 
 				<div class="page-content">
