@@ -19,6 +19,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
+					<img class="error-404-pic" src="<?php bloginfo('template_directory');?>/assets/images/pageNotFound.jpg" border="0" alt="">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'defenestrationofprague' ); ?></p>
 
 					<?php
