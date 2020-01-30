@@ -30,9 +30,9 @@ if ( ! function_exists( 'defenestrationofprague_setup' ) ) :
 		// Add post formats
 		add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
 
-		// Allow custom headers
+		// Add support for custom headers
 		add_theme_support( 'custom-header' );
-
+		
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
@@ -105,29 +105,10 @@ function defenestrationofprague_content_width() {
 add_action( 'after_setup_theme', 'defenestrationofprague_content_width', 0 );
 
 /**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ * Custom header to wordpress theme
  */
-function defenestrationofprague_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'defenestrationofprague' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'defenestrationofprague' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'defenestrationofprague_widgets_init' );
-
-
-/**
- * Function to add support for custom headers
- */
-function defenestrationofprague_custom_header_setup(){
-	$defaults = array(
+function defenestrationofprague_custom_header_setup() {
+    $defaults = array(
         // Default Header Image to display
         'default-image'         => get_template_directory_uri() . '/images/headers/default.jpg',
         // Display the header text along with the image
@@ -150,7 +131,25 @@ function defenestrationofprague_custom_header_setup(){
         'admin-preview-callback'    => 'adminpreview_cb',
         );
 }
-add_action('after_setup_theme', 'themename_custom_header_setup');
+add_action( 'after_setup_theme', 'themename_custom_header_setup' );
+
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function defenestrationofprague_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'defenestrationofprague' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'defenestrationofprague' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'defenestrationofprague_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
