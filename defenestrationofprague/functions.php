@@ -85,6 +85,14 @@ if ( ! function_exists( 'defenestrationofprague_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+		add_theme_support('custom-header', apply_filters('defenestrationofprague_custom_header_args', array(
+			'default-image' => '',
+			'default-text-color' => '000000',
+			'width' => 1333,
+			'height' => 250,
+			'flex-height' => true,
+			'wp-head-callback' => 'defenestrationofprague_header_style'
+		)));
 	}
 endif;
 add_action( 'after_setup_theme', 'defenestrationofprague_setup' );
