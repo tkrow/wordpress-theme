@@ -29,9 +29,6 @@ if ( ! function_exists( 'defenestrationofprague_setup' ) ) :
 
 		// Add post formats
 		add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
-
-		// Add support for custom headers
-		add_theme_support( 'custom-header' );
 		
 		/*
 		 * Let WordPress manage the document title.
